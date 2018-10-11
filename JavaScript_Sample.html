@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Java Script</title>
+    <script type="text/javascript">
+        console.clear()
+        let students = [
+            {name: 'Remy', cohort: 'Jan'},
+            {name: 'Genevieve', cohort: 'March'},
+            {name: 'Chuck', cohort: 'Jan'},
+            {name: 'Osmund', cohort: 'June'},
+            {name: 'Nikki', cohort: 'June'},
+            {name: 'Boris', cohort: 'June'}
+        ];
+
+        console.log ("---------Challenge 1 --------")
+        for (i in students){
+        
+        console.log("name : " + students[i].name + ", cohort :"+ students[i].cohort)
+        } 
+
+        console.log ("---------Challenge 2 --------")
+
+
+        let users = {
+            employees: [
+                {'first_name':  'Miguel', 'last_name' : 'Jones'},
+                {'first_name' : 'Ernie', 'last_name' : 'Bertson'},
+                {'first_name' : 'Nora', 'last_name' : 'Lu'},
+                {'first_name' : 'Sally', 'last_name' : 'Barkyoumb'}
+            ],
+            managers: [
+            {'first_name' : 'Lillian', 'last_name' : 'Chambers'},
+            {'first_name' : 'Gordon', 'last_name' : 'Poe'}
+            ]
+        };
+        
+
+
+        function print(user){
+        
+        for (i in user){
+            
+            total =Number(user[i].first_name.length)+Number(user[i].last_name.length)
+            console.log(Number(i)+1 +"."+user[i].last_name.toUpperCase()+" , "+ user[i].first_name.toUpperCase() + " - "+ total )
+
+        }
+        
+        } 
+        console.log("[Employee]")
+        print(users.employees)
+        console.log("[Managers]")
+        print(users.managers)
+
+        var ninja = 'Libby';
+        setTimeout( function (){ console.log(ninja); }, 2000 ); // run the function defined after 2000 milliseconds
+        console.log(ninja);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
